@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  igsservice:
+    image: ${DOCKER_REGISTRY-}igsservice
+    build:
+      context: .
+      dockerfile: Dockerfile
